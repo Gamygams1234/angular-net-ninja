@@ -10,12 +10,16 @@ export class HomeComponent implements OnInit {
   myString: string = 'I like Chicken';
   myBoolean: boolean = true;
 
+
   constructor() {}
 
   // life cycle method
   ngOnInit(): void {}
 
-  toggleAddTask() {
-    console.log('Toggle');
+
+  alertMe(val: any){
+    alert(val);
   }
+
+
 }
