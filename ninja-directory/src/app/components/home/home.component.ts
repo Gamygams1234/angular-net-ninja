@@ -10,6 +10,11 @@ export class HomeComponent implements OnInit {
   myString: string = 'I like Chicken';
   myBoolean: boolean = true;
 
+  ninja = {
+    name : "Yoshi",
+    belt: "black"
+  }
+
 
   constructor() {}
 

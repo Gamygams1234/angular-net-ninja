@@ -6,8 +6,11 @@ Home Works
 <ng-content></ng-content>
 
 
-<input [value]= "myString"/>
+<label >Name:</label>
+<input type="text" [(ngModel)]="ninja.name"/>
+<label >Belt:</label>
+<input type="text" [(ngModel)]="ninja.belt"/>
 
-<input [required]= "myBoolean"/>
 
-<button (click) = "alertMe('I like Beef')">Click Me Here!</button>
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
