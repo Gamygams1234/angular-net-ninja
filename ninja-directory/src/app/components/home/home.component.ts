@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter  } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -14,18 +15,21 @@ export class HomeComponent implements OnInit {
   myBoolean: boolean = true;
 
   @Input() ninja:any;
+  @Output() onYell = new EventEmitter();
 
-
+  fireYellEvent(e:any){
+    this.onYell.emit(e);
+  }
 
   constructor() {}
 
   // life cycle method
-  ngOnInit(): void {}
+  ngOnInit(): void {
 
-
-  alertMe(val: any){
-    alert(val);
   }
+
+
+  
 
 
 }

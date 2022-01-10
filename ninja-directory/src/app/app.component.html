@@ -8,6 +8,6 @@
 </header>
 
 <section id = "main">
-<app-home [ninja]="ninja" >Hello</app-home>
+<app-home [ninja]="ninja" (onYell)= "yell($event)" >Hello</app-home>
 
 </section>
