@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ninja-directory';
 
-  name = 'Gamygams1234';
+
+  ninja = {
+    name : "Yoshi",
+    belt: "red"
+  }
+
+
 }
 

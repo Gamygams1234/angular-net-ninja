@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  // inputs: ["ninja"],
 })
 export class HomeComponent implements OnInit {
-  title: string = 'Task Tracker';
-  myString: string = 'I like Chicken';
+
+
+  title: string = "this is the title"
+
   myBoolean: boolean = true;
 
-  ninja = {
-    name : "Yoshi",
-    belt: "black"
-  }
+  @Input() ninja:any;
+
 
 
   constructor() {}
